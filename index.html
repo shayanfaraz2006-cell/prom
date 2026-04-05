@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prom?</title>
+<style>
+body {
+  text-align: center;
+  font-family: Arial;
+  margin-top: 100px;
+}
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  margin: 10px;
+  position: relative;
+}
+#no {
+  position: absolute;
+}
+</style>
+</head>
+<body>
+
+<h1>Will you go to prom with me? 💖</h1>
+
+<button onclick="yes()">Yes</button>
+<button id="no" onmouseover="move()">No</button>
+
+<script>
+function yes() {
+  alert("You just made me the happiest person 😄❤️");
+}
+
+function move() {
+  let x = Math.random() * window.innerWidth - 100;
+  let y = Math.random() * window.innerHeight - 100;
+  document.getElementById('no').style.left = x + 'px';
+  document.getElementById('no').style.top = y + 'px';
+}
+</script>
+
+</body>
+</html>
